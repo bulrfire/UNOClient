@@ -7,7 +7,7 @@ data = {"pl": "4"}
 def http_post(date, url):
     headers = {'Content-Type': 'application/json'}
     re = requests.post("http://localhost:8080" + url, json=date, headers=headers)
-    print(re.text +"\n")
+    print(re.text + "\n")
 
 
 def http_get(url):
